@@ -18,4 +18,23 @@ orchestrator:
   quiet: false
 
 datasets:
+  - path: test_tasks/Compensation-Scenario-Modeling
+  - path: test_tasks/Cross-Format-Data-Reconciliation
+  - path: test_tasks/DMAIC-Quality-Analysis
+  - path: test_tasks/Distribution-Center-Auditing
+  - path: test_tasks/Document-Fraud-Detection
+  - path: test_tasks/Embedded-Data-Repair
+  - path: test_tasks/Financial-Statement-Rolling
+  - path: test_tasks/HWPX-Document-Automation
+  - path: test_tasks/Healthcare-Cost-Benefit-Analysis
   - path: test_tasks/Industry-Correlation-Analysis
+  - path: test_tasks/Inventory-&-Finance-Integration
+  - path: test_tasks/Medical-Data-Standardization
+  - path: test_tasks/OCR-Data-Extraction
+  - path: test_tasks/Operational-Recovery-Planning
+  - path: test_tasks/PPT-Formatting-Optimization
+  - path: test_tasks/Production-Capacity-Planning
+  - path: test_tasks/SEC-13F-Financial-Analysis
+  - path: test_tasks/Sales-Pivot-Analysis
+  - path: test_tasks/Supply-Chain-Replenishment
+  - path: test_tasks/Weighted-Risk-Assessment

@@ -1,8 +1,14 @@
 # SkillFlow
 
-SkillFlow is a benchmark for evaluating autonomous agents on executable office and data workflows, with support for both baseline runs and iterative shared-skill evolution.
+**[Website](https://zhangzi-a.github.io/SkillFlow-project-page/)** · **[Harbor Docs](https://www.harborframework.com/docs)** · **[Hugging Face Data](https://huggingface.co/datasets/zhang-ziao/SkillFlow-Task)** · **[Paper]()**
 
-## What is SkillFlow?
+SkillFlow is an open benchmark for evaluating autonomous agents on executable office and data workflows, with support for both baseline runs and iterative shared-skill evolution.
+
+This release is based on the benchmark design described in `/Users/zhangziao/Documents/skillevolvebench/_EMNLP2026_SkillEvo_Bench`.
+
+## Introduction
+
+SkillFlow is a benchmark for studying how agents solve workflow tasks, externalize reusable skills, and improve through cross-task skill evolution under executable evaluation settings.
 
 SkillFlow focuses on two settings:
 
@@ -78,3 +84,14 @@ The iterative setting uses `shared_skills_template/skills` as the default initia
 - This release does **not** include OpenHands in the base image.
 - Domestic package mirrors are intentionally removed from the Docker setup.
 - Replace API keys, model names, and endpoints in the example configs before running.
+
+## BibTeX
+
+```bibtex
+@article{zhang2026skillflow,
+  title   = {SkillFlow: Benchmarking Skill Evolution for Autonomous Agents},
+  author  = {Zhang, Ziao and others},
+  year    = {2026},
+  journal = {preprint}
+}
+```
