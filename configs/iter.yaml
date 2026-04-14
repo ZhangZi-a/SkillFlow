@@ -1,0 +1,21 @@
+job_name: iter-example-skill
+
+agents:
+  - import_path: libs.harbor_noinstall_agents.agents:NoInstallClaudeCode
+    model_name: anthropic/claude-sonnet-4.5
+    env:
+      ANTHROPIC_API_KEY: "YOUR_API_KEY"
+    kwargs: {}
+
+environment:
+  allow_internet: true
+  force_build: false
+  delete: false
+
+orchestrator:
+  type: local
+  n_concurrent_trials: 1
+  quiet: false
+
+datasets:
+  - path: test_tasks/Industry-Correlation-Analysis
