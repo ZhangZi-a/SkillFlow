@@ -4,8 +4,6 @@
 
 SkillFlow is an open benchmark for evaluating autonomous agents on executable office and data workflows, with support for both baseline runs and iterative shared-skill evolution.
 
-This release is based on the benchmark design described in `/Users/zhangziao/Documents/skillevolvebench/_EMNLP2026_SkillEvo_Bench`.
-
 ## Introduction
 
 SkillFlow is a benchmark for studying how agents solve workflow tasks, externalize reusable skills, and improve through cross-task skill evolution under executable evaluation settings.
