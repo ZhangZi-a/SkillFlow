@@ -1,6 +1,6 @@
 # SkillFlow
 
-**[Website](https://zhangzi-a.github.io/SkillFlow-project-page/)** · **[Harbor Docs](https://www.harborframework.com/docs)** · **[Hugging Face Data](https://huggingface.co/datasets/zhang-ziao/SkillFlow-Task)** · **[Paper]()**
+**[Website](https://zhangzi-a.github.io/SkillFlow-project-page/)** · **[Paper](https://arxiv.org/abs/2604.17308)** · **[Hugging Face Data](https://huggingface.co/datasets/zhang-ziao/SkillFlow-Task)** · **[Hugging Face Paper](https://huggingface.co/papers/2604.17308)** · **[Harbor Docs](https://www.harborframework.com/docs)**
 
 SkillFlow is an open benchmark for evaluating autonomous agents on executable office and data workflows, with support for both baseline runs and iterative shared-skill evolution.
 
@@ -89,9 +89,12 @@ The iterative setting uses `shared_skills_template/skills` as the default initia
 
 ```bibtex
 @article{zhang2026skillflow,
-  title   = {SkillFlow: Benchmarking Skill Evolution for Autonomous Agents},
-  author  = {Zhang, Ziao and others},
-  year    = {2026},
-  journal = {preprint}
+  title         = {SkillFlow: Benchmarking Skill Evolution for Autonomous Agents},
+  author        = {Zhang, Ziao and others},
+  year          = {2026},
+  journal       = {arXiv preprint arXiv:2604.17308},
+  eprint        = {2604.17308},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2604.17308}
 }
 ```
