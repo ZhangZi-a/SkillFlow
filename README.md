@@ -15,6 +15,7 @@ SkillFlow focuses on two settings:
 
 This repository contains the code, runners, analysis scripts, and Docker setup for the benchmark.
 Task data is distributed separately via Hugging Face.
+For readers interested in inspecting the final evolved shared-skill library produced by the iterative setting, we also release collected final skills at [Hugging Face](https://huggingface.co/datasets/zhang-ziao/SkillFlow-exp-skills).
 
 ## Quick Start
 
