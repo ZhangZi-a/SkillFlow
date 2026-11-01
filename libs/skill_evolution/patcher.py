@@ -915,6 +915,13 @@ Return no prose before or after the JSON object.
             attempt_modes=attempt_modes,
         )
 
+def _resolve_within(root: Path, rel: str) -> Path | None:
+    # Patch paths come from model output, so a ".." entry must not
+    # reach outside the shared skills directory.
+    target = (root / rel).resolve()
+    return target if target.is_relative_to(root.resolve()) else None
+
+
     @staticmethod
     def apply_patch(
         shared_skills_dir: Path,
@@ -937,7 +944,10 @@ Return no prose before or after the JSON object.
 
         # 删除
         for rel in patch.delete_paths:
-            target = shared_skills_dir / rel
+            target = _resolve_within(shared_skills_dir, rel)
+            if target is None:
+                applied["errors"].append(f"delete {rel}: path escapes shared skills dir")
+                continue
             if target.exists():
                 try:
                     if target.is_file():
@@ -950,7 +960,10 @@ Return no prose before or after the JSON object.
 
         # 新增/更新
         for rel, content in patch.upsert_files.items():
-            target = shared_skills_dir / rel
+            target = _resolve_within(shared_skills_dir, rel)
+            if target is None:
+                applied["errors"].append(f"upsert {rel}: path escapes shared skills dir")
+                continue
             try:
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(content, encoding="utf-8")
